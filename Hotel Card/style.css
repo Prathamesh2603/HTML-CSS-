@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    width: 300px;
+    height: 400px;
+    border-radius: 30px;
+    background-image: url("images/hotel_image.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Card Content */
+.card__content {
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    border-radius: 0px 0px 30px 30px;
+}
+
+/* Card location Name and Price */
+.card__location-name-and-price {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+#card__name {
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: 8px;
+    color: white;
+}
+#card__price {
+    width: 45px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 2px;
+    margin-right: 8px;
+    color: white;
+    text-align: center;
+}
+
+/* Card Location Info */
+.card__location-info {
+    width: 68%;
+    font-size: 11px;
+    margin: 8px;
+    color: white;
+}
+/* Card rating */
+.card__location-rating-and-more {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-bottom: 16px;
+}
+.filter{
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icon{
+    height: 18px;
+    width: 18px;
+    background-image: url("images/star.svg");
+    background-size: cover;
+}
+.card__rating{
+    width: 55px;
+    height: 22px;
+    margin-left: 9px;
+    margin-right: 8px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card__stay-info {
+    width: 110px;
+    height: 22px;
+    margin-right: 8px;
+    font-size: 0.8rem;
+}
+.card__trip-info {
+    width: 95px;
+    height: 22px;
+    margin-right: auto;
+    font-size: 0.8rem;
+}
+
+/* Card Button */
+.card__button-book-now {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    
+}
+#card__button {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    width: 94%;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 750;
+}
